@@ -5,6 +5,7 @@ public abstract class Pessoa implements PessoaIF {
     private String cpf;
     private String email;
     private String telefone;
+    private char genero;
 
     public Pessoa(String nome) {
         this.nome = nome;
@@ -42,4 +43,11 @@ public abstract class Pessoa implements PessoaIF {
         this.telefone = telefone;
     }
 
+    public char getGenero() {
+        return genero;
+    }
+
+    public void setGenero(char genero) {
+        this.genero = genero;
+    }
 }
