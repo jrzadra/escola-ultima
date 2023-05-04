@@ -5,7 +5,7 @@ import com.ultimaschool.pessoas.Responsavel;
 
 public class Main {
     public static void main(String[] args) {
-        Estudante estudante = new Estudante("Carlos Eduardo Moreira");
+        Estudante estudante = new Estudante("Carlos Eduardo Moreira", 'M');
 
 
         estudante.consolidarNota(1,6.0);
@@ -16,7 +16,7 @@ public class Main {
         System.out.println(estudante.relatorio());
         System.out.println(estudante.verSituacao(3));
 
-        Responsavel responsavel = new Responsavel("Guilherme Moreira");
+        Responsavel responsavel = new Responsavel("Guilherme Moreira", 'M');
         responsavel.pagarMensalidade(1,true);
         responsavel.pagarMensalidade(2,true);
         responsavel.pagarMensalidade(3,false);

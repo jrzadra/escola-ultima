@@ -6,8 +6,8 @@ public class Estudante extends Pessoa {
     private String matricula;
     private double[] notas = new double[UNIDADE];
 
-    public Estudante(String nome) {
-        super(nome);
+    public Estudante(String nome, char genero) {
+        super(nome, genero);
     }
 
     public String getMatricula() {

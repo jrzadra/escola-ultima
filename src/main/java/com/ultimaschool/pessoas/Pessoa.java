@@ -7,8 +7,9 @@ public abstract class Pessoa implements PessoaIF {
     private String telefone;
     private char genero;
 
-    public Pessoa(String nome) {
+    public Pessoa(String nome, char genero) {
         this.nome = nome;
+        this.genero = genero;
     }
 
     public String getNome() {
@@ -49,5 +50,15 @@ public abstract class Pessoa implements PessoaIF {
 
     public void setGenero(char genero) {
         this.genero = genero;
+    }
+
+    private String tratamentoGenero() {
+        if (getGenero() == 'M') {
+            return "O";
+        } else if( getGenero() == 'F') {
+            return "A";
+        } else {
+            return " ";
+        }
     }
 }
