@@ -3,18 +3,19 @@ package com.ultimaschool.pessoas;
 import java.util.ArrayList;
 
 public class Responsavel extends Pessoa {
-    final int MESES = 12;
+    final int MESES = 13;
     private boolean[] pagamentos = new boolean[MESES];
 
-    public Responsavel(String nome) {
-        super(nome);
+    public Responsavel(String nome, char genero) {
+        super(nome, genero);
+
     }
 
     public boolean[] getPagamentos() {
         return pagamentos;
     }
 
-    public void setPagamentos(boolean[] pagamentos) {
+    public void setPagamentos() {
         this.pagamentos = pagamentos;
     }
 
@@ -52,7 +53,8 @@ public class Responsavel extends Pessoa {
 
     @Override
     public String relatorio() {
+
             return "O responsável financeiro " + getNome() + ", realizou o pagamento da mensalidade. "
                     + mesesComPagamento();
-            }
+        }
     }
